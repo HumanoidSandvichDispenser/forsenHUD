@@ -115,7 +115,7 @@
 	{
 		"ControlName"		"Label"
 		"fieldName"			"TargetDataLabel"
-		"font"				"FontRegular10"
+		"font"				"FontBold12"
 		"xpos"				"40"
 		"ypos"				"23"
 		"zpos"				"1"
@@ -125,6 +125,42 @@
 		"enabled"			"1"
 		"labelText"			"%targetdata%"
 		"textAlignment"		"west"
+	}
+
+	"TargetDataLabelPermanent"
+	{
+		"ControlName"		"Label"
+		"fieldName"			"TargetDataLabelPermanent"
+		"font"				"FontBold12"
+		"xpos"				"0"
+		"ypos"				"0"
+		"zpos"				"0"
+		"wide"				"640"
+		"tall"				"10"
+		"visible"			"1"
+		"enabled"			"1"
+		"labelText"			"%targetdata%"
+		"textAlignment"		"west"
+		"fgcolor_override"	"Gray"
+		"pin_to_sibling"	"TargetDataLabel"
+	}
+
+	"TargetDataLabelShadow"
+	{
+		"ControlName"		"Label"
+		"fieldName"			"TargetDataLabelShadow"
+		"font"				"FontBold12"
+		"xpos"				"-1"
+		"ypos"				"-1"
+		"zpos"				"-1"
+		"wide"				"640"
+		"tall"				"10"
+		"visible"			"1"
+		"enabled"			"1"
+		"labelText"			"%targetdata%"
+		"textAlignment"		"west"
+		"fgcolor_override"	"Black"
+		"pin_to_sibling"	"TargetDataLabel"
 	}
 
 	"SpectatorGUIHealth"
@@ -144,6 +180,27 @@
 		"HealthDeathWarningColor"	"HUDDeathWarning"
 		"TextColor"					"HudOffWhite"
 	}
+
+    //"TargetDataBar"
+    //{    
+    //    "ControlName"            "ContinuousProgressBar"
+    //    "fieldName"              "TargetDataBar"
+    //    "font"                   "Default"
+    //    "xpos"                   "0"
+    //    "ypos"                   "31"
+    //    "zpos"                   "0"
+    //    "wide"                   "f0"
+    //    "tall"                   "2"
+    //    "visible"                "1"
+    //    "variable"               "targetdata"
+    //    "enabled"                "1"
+    //    "textAlignment"          "Left"
+    //    "fgcolor_override"       "UberCharge"
+    //    "bgcolor_override"       "Transparent"
+    //    
+    //    "pin_corner_to_sibling" "PIN_CENTER_BOTTOM"
+    //    "pin_to_sibling_corner" "PIN_CENTER_TOP"
+    //}
 
 	"AmmoIcon"
 	{
