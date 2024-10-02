@@ -266,5 +266,15 @@ Scheme
 		"UpgradeSelectedBg"						"249 138 83 255"
 		"UpgradeDisabledFg"						"64 59 52 255"
 		"UpgradeDisabledBg"						"79 77 68 255"
+
+		// TWITCH MAIN MENU COLORS
+		"TwitchGrey1"							"14 14 16 255"
+		"TwitchGrey2"							"24 24 27 255"
+		"TwitchGrey3"							"31 31 35 255"
+		"TwitchGrey9"							"173 173 184 255"
+		"TwitchGrey14"							"239 239 241 255"
+		"TwitchPurple10"						"169 112 255 255"
+		"TwitchRed11"							"255 130 128 255"
+		"TwitchGreen13"							"0 245 147 255"
 	}
 }

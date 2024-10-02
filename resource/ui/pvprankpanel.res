@@ -52,12 +52,12 @@
 			"xpos"			"cs-0.5"
 			"ypos"			"cs-0.5"
 			"zpos"			"0"
-			"wide"			"120"
-			"tall"			"60"
+			"wide"			"60"
+			"tall"			"30"
 			"autoResize"	"0"
 			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
+			"visible"		"0"
+			"enabled"		"0"
 			"fov"			"80"
 			"proportionaltoparent"	"1"
 
@@ -206,19 +206,23 @@
 			"ControlName"		"Label"
 			"fieldName"		"NameLabel"
 			"xpos"			"0"
-			"ypos"			"2"
-			"wide"			"170"
+			"ypos"			"0"
+			"wide"			"111"
 			"zpos"			"100"
-			"tall"			"15"
+			"tall"			"9"
 			"visible"		"1"
 			"enabled"		"1"
-			"font"			"FontRegular14"
+			"font"			"Inter9"
 			"font_minmode"	"SmallerIcons"
-			"fgcolor_override"		"TanLight"
-			"textAlignment"			"center"
+			"fgcolor_override"		"TwitchGrey14"
 			"labelText"				"%name%"
 			"proportionaltoparent"	"1"
-			
+			"textAlignment"	"east"
+
+			"pin_to_sibling"		"DescLine1"
+			"pin_corner_to_sibling"	"PIN_TOPLEFT"
+			"pin_to_sibling_corner"	"PIN_TOPRIGHT"
+
 			if_mini
 			{
 				"visible"	"0"
@@ -229,19 +233,49 @@
 		{
 			"ControlName"		"CAutoFittingLabel"
 			"fieldName"		"DescLine1"
-			"xpos"			"12"
-			"ypos"			"18"
-			"wide"			"146"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"25"
 			"zpos"			"100"
-			"tall"			"20"
+			"tall"			"9"
 			"visible"		"1"
 			"enabled"		"1"
-			"font"					"HudFontSmallest"
-			"fgcolor_override"		"TanLight"
-			"textAlignment"			"north"
+			"font"					"Inter9"
+			"fgcolor_override"		"TwitchRed11"
+			//"textAlignment"			"east"
+			"textAlignment"			"left"
 			"labelText"				"%desc1%"
 			"proportionaltoparent"	"1"
-			"centerwrap" "1"
+			"centerwrap" "0"
+
+			"pin_to_sibling"		"LevelIcon"
+			"pin_corner_to_sibling"	"PIN_TOPLEFT"
+			"pin_to_sibling_corner"	"PIN_TOPRIGHT"
+
+			if_mini
+			{
+				"xpos"			"50"
+				"ypos"			"r35"
+			}
+		}
+
+		"LevelIcon"
+		{
+			"ControlName"		"CAutoFittingLabel"
+			"fieldName"		"LevelIcon"
+			"xpos"			"4"
+			"ypos"			"0"
+			"wide"			"10"
+			"zpos"			"100"
+			"tall"			"9"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"					"Icons9"
+			"fgcolor_override"		"TwitchRed11"
+			"textAlignment"			"left"
+			"labelText"				"!"
+			"proportionaltoparent"	"1"
+			"centerwrap" "0"
 
 			if_mini
 			{
@@ -254,16 +288,16 @@
 		{
 			"ControlName"	"CAutoFittingLabel"
 			"fieldName"		"DescLine2"
-			"xpos"			"65"
+			"xpos"			"4"
 			"ypos"			"28"
-			"wide"			"195"
+			"wide"			"100"
 			"zpos"			"100"
 			"tall"			"10"
 			"visible"		"1"
 			"enabled"		"1"
-			"font"			"FontRegular10"
-			"fgcolor_override"	"TanLight"
-			"textAlignment"	"north-west"
+			"font"			"Inter10"
+			"fgcolor_override"	"TwitchGrey14"
+			"textAlignment"	"left"
 			"labelText"		"%desc2%"
 			"proportionaltoparent"	"1"
 
@@ -291,11 +325,15 @@
 		{
 			"ControlName"	"EditablePanel"
 			"fieldName"		"StatsContainer"
-			"xpos"			"0"
+			"xpos"			"4"
 			"ypos"			"0"
-			"wide"			"260"
-			"tall"			"f0"
+			"wide"			"f0"
+			"tall"			"12"
 			"proportionaltoparent"	"1"
+
+			"pin_corner_to_sibling"	"PIN_TOPLEFT"
+			"pin_to_sibling_corner"	"PIN_TOPLEFT"
+			"pin_to_sibling"		"LevelIcon"
 
 			if_mini
 			{
@@ -309,9 +347,9 @@
 				"Controlname"	"EditablePanel"
 				"fieldName"		"XPBar"
 				"xpos"			"0"
-				"ypos"			"rs1-35"
-				"wide"			"170"
-				"tall"			"35"
+				"ypos"			"0"
+				"wide"			"f0"
+				"tall"			"f0"
 				"proportionaltoparent"	"1"
 
 				if_mini
@@ -321,61 +359,14 @@
 					"wide"			"p1"
 				}
 
-				"CurrentXPLabel"
-				{
-					"ControlName"	"Label"
-					"fieldName"		"CurrentXPLabel"
-					"xpos"			"35"
-					"ypos"			"15"
-					"zpos"			"10"
-					"wide"			"50"
-					"tall"			"10"
-					"visible"		"1"
-					"enabled"		"1"
-					"font"			"FontRegular10"
-					"fgcolor_override"	"TanLight"
-					"textAlignment"	"west"
-					"labelText"		"%current_xp%"
-					"proportionaltoparent"	"1"
-
-					if_mini
-					{
-						"xpos"			"25"
-						"ypos"			"25"
-					}
-				}
-
-				"NextLevelXPLabel"
-				{
-					"ControlName"	"Label"
-					"fieldName"		"NextLevelXPLabel"
-					"xpos"			"85"
-					"ypos"			"15"
-					"zpos"			"0"
-					"wide"			"50"
-					"tall"			"10"
-					"visible"		"1"
-					"enabled"		"1"
-					"font"			"FontRegular10"
-					"fgcolor_override"	"TanLight"
-					"textAlignment"	"east"
-					"labelText"		"%next_level_xp%"
-					"proportionaltoparent"	"1"
-
-					if_mini
-					{
-						"ypos"			"25"
-					}
-				}
-
 				"ProgressBarsContainer"
 				{
 					"Controlname"	"EditablePanel"
 					"fieldName"		"ProgressBarsContainer"
-					"xpos"			"35"
-					"ypos"			"rs1-20"
-					"wide"			"100"
-					"tall"			"7"
+					"xpos"			"0"
+					"ypos"			"0"
+					"wide"			"f0"
+					"tall"			"f0"
 					"proportionaltoparent"	"1"
 
 					if_mini
@@ -390,12 +381,13 @@
 						"ControlName"	"ProgressBar"
 						"fieldName"		"ProgressBar"
 						"xpos"			"0"
-						"ypos"			"cs-0.5"
-						"wide"			"f0"
-						"tall"			"f-2"
+						"ypos"			"0"
+						"wide"			"140"
+						"tall"			"f0"
 						"zpos"			"1"
 						"proportionaltoparent"	"1"
 						"progress"		"1"
+						"visible"		"0"
 
 						"fgcolor_override"	"20 20 20 180"
 						"bgcolor_override"	"Transparent"
@@ -405,14 +397,15 @@
 					{
 						"ControlName"	"ContinuousProgressBar"
 						"fieldName"		"ContinuousProgressBar"
-						"xpos"			"cs-0.5"
-						"ypos"			"cs-0.5"
-						"wide"			"f2"
-						"tall"			"f2"
+						"xpos"			"0"
+						"ypos"			"4"
+						"wide"			"150"
+						"tall"			"f-4"
 						"proportionaltoparent"	"1"
 						"progress"		"0"
 
-						"fgcolor_override"	"CreditsGreen"
+						"fgcolor_override"	"TwitchGrey2"
+						"bgcolor_override"	"Transparent"
 					}
 
 					"Frame"
@@ -420,14 +413,14 @@
 						"Controlname"	"EditablePanel"
 						"fieldName"		"Frame"
 						"xpos"			"0"
-						"ypos"			"0"
-						"wide"			"f0"
-						"tall"			"f0"
+						"ypos"			"r2"
+						"wide"			"150"
+						"tall"			"2"
 						"zpos"			"5"
-						"visible"		"0"
-						"enabled"		"0"
 						"proportionaltoparent"	"1"
-						"border"		"InnerShadowBorderThin"
+
+						"fgcolor_override"	"TwitchGrey2"
+						"bgcolor_override"	"TwitchGrey2"
 					}
 				}
 			}

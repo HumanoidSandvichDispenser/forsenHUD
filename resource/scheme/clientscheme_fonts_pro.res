@@ -5,6 +5,120 @@ Scheme
 	// describes all the fonts
 	Fonts
 	{
+        // TWITCH MAIN MENU FONT
+		"Inter20"
+		{
+			"1"
+			{
+				"name"			"Inter"
+				"tall"			"20"
+				"additive"		"0"
+				"antialias" 	"1"
+			}
+		}
+
+		"Inter16"
+		{
+			"1"
+			{
+				"name"			"Inter"
+				"tall"			"16"
+				"additive"		"0"
+				"antialias" 	"1"
+			}
+		}
+
+		"Inter14"
+		{
+			"1"
+			{
+				"name"			"Inter"
+				"tall"			"14"
+				"additive"		"0"
+				"antialias" 	"1"
+			}
+		}
+
+		"Inter12"
+		{
+			"1"
+			{
+				"name"			"Inter"
+				"tall"			"12"
+				"additive"		"0"
+				"antialias" 	"1"
+			}
+		}
+
+		"Inter10"
+		{
+			"1"
+			{
+				"name"			"Inter"
+				"tall"			"10"
+				"additive"		"0"
+				"antialias" 	"1"
+			}
+		}
+
+		"Inter10Light"
+		{
+			"1"
+			{
+				"name"			"Inter"
+				"weight"		"200"
+				"tall"			"10"
+				"additive"		"0"
+				"antialias" 	"1"
+			}
+		}
+
+		"Inter9"
+		{
+			"1"
+			{
+				"name"			"Inter"
+				"tall"			"9"
+				"additive"		"0"
+				"antialias" 	"1"
+			}
+		}
+
+		"Inter9Light"
+		{
+			"1"
+			{
+				"name"			"Inter"
+				"weight"		"200"
+				"tall"			"9"
+				"additive"		"0"
+				"antialias" 	"1"
+			}
+		}
+
+		"Inter8"
+		{
+			"1"
+			{
+				"name"			"Inter"
+				"tall"			"8"
+				"additive"		"0"
+				"antialias" 	"1"
+			}
+		}
+
+		"Inter8Light"
+		{
+			"1"
+			{
+				"name"			"Inter"
+				"weight"		"200"
+				"tall"			"8"
+				"additive"		"0"
+				"antialias" 	"1"
+			}
+		}
+
 		// CUSTOM
 		"FontBold50"
 		{
@@ -2836,13 +2950,18 @@ Scheme
 			"font"	"resource/fonts/CodeProLC.otf"
 			"name"	"Code-Pro-LC"
 		}
-		"10"		"resource/linux_fonts/DejaVuSans.ttf"
-		"11"		"resource/linux_fonts/DejaVuSans-Bold.ttf"
-		"12"		"resource/linux_fonts/DejaVuSans-BoldOblique.ttf"
-		"13"		"resource/linux_fonts/DejaVuSans-Oblique.ttf"
-		"14"		"resource/linux_fonts/LiberationSans-Regular.ttf"
-		"15"		"resource/linux_fonts/LiberationSans-Bold.ttf"
-		"16"		"resource/linux_fonts/LiberationMono-Regular.ttf"
-		"17"		"resource/linux_fonts/FiraSans-Regular.ttf"
+		"10"
+		{
+			"font"	"resource/fonts/Inter.ttf"
+			"name"	"Inter"
+		}
+		"11"		"resource/linux_fonts/DejaVuSans.ttf"
+		"12"		"resource/linux_fonts/DejaVuSans-Bold.ttf"
+		"13"		"resource/linux_fonts/DejaVuSans-BoldOblique.ttf"
+		"14"		"resource/linux_fonts/DejaVuSans-Oblique.ttf"
+		"15"		"resource/linux_fonts/LiberationSans-Regular.ttf"
+		"16"		"resource/linux_fonts/LiberationSans-Bold.ttf"
+		"17"		"resource/linux_fonts/LiberationMono-Regular.ttf"
+		"18"		"resource/linux_fonts/FiraSans-Regular.ttf"
 	}
 }

@@ -3,10 +3,10 @@
 	"avatar"
 	{
 		"fieldName"				"avatar"
-		"xpos"					"0"
-		"ypos"					"0"
-		"wide"					"25"
-		"tall"					"25"
+		"xpos"					"4"
+		"ypos"					"2"
+		"wide"					"16"
+		"tall"					"16"
 		"proportionaltoparent"	"1"
 		"mouseinputenabled"		"0"
 		"scaleImage"			"1"
@@ -29,7 +29,7 @@
 		"paintbackground"		"1"
 
 		"defaultBgColor_override"	"0 0 0 0"
-		"armedBgColor_override"		"255 255 255 10"
+		"armedBgColor_override"		"255 255 255 5"
 
 		"border_default"		"NoBorder"
 		"border_armed"			"NoBorder"
@@ -39,7 +39,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"NameLabel"
-		"xpos"					"28"
+		"xpos"					"24"
 		"ypos"					"2"
 		"zpos"					"100"
 		"wide"					"97"
@@ -51,15 +51,16 @@
 		"wrap"					"0"
 		"labelText"				"%name%"
 		"proportionaltoparent"	"1"
-		"font"					"FontRegular10"
+		"font"					"Inter9"
+		"fgcolor_override"		"TwitchGrey14"
 		"mouseinputenabled"		"0"
 	}
 
 	"StatusLabel"
 	{
 		"fieldName"				"StatusLabel"
-		"xpos"					"28"
-		"ypos"					"12"
+		"xpos"					"24"
+		"ypos"					"8"
 		"zpos"					"100"
 		"wide"					"97"
 		"tall"					"12"
@@ -70,8 +71,8 @@
 		"wrap"					"0"
 		"labelText"				"%status%"
 		"proportionaltoparent"	"1"
-		"font"					"FontRegular8"
-		"fgcolor_override"		"TanLight"
+		"font"					"Inter9Light"
+		"fgcolor_override"		"TwitchGrey9"
 		"mouseinputenabled"		"0"
 	}
 }
