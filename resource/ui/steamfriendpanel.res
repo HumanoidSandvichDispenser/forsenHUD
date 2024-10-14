@@ -60,7 +60,7 @@
 	{
 		"fieldName"				"StatusLabel"
 		"xpos"					"24"
-		"ypos"					"8"
+		"ypos"					"9"
 		"zpos"					"100"
 		"wide"					"97"
 		"tall"					"12"
@@ -71,7 +71,7 @@
 		"wrap"					"0"
 		"labelText"				"%status%"
 		"proportionaltoparent"	"1"
-		"font"					"Inter9Light"
+		"font"					"Inter8Light"
 		"fgcolor_override"		"TwitchGrey9"
 		"mouseinputenabled"		"0"
 	}

@@ -82,7 +82,7 @@
 
 		"ToggleChatButton"
 		{
-			"ControlName"	"CExImageButton"
+			"ControlName"	"Button"
 			"fieldName"		"ToggleChatButton"
 			"xpos"			"0"
 			"ypos"			"3"
@@ -95,25 +95,22 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"
-			"labeltext"		"m"
-			"font"			"SmallIcons"
+			"font"			"Inter12"
 			"textAlignment"	"center"
-			"dulltext"		"0"
-			"brighttext"	"0"
+			"tooltip"		"Whispers forsenCD"
+			"labeltext"		"󰍥"
 			"Command"		"toggle_chat"
 			"proportionaltoparent"	"1"
 			"mouseinputenabled"	"1"
 			"keyboardinputenabled"	"0"
 			"actionsignallevel"	"2"
-			"roundedcorners"	"0"
-			"paintbackground"	"0"
 
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 
-			"defaultFgColor_override"	"TanLight"
-			"armedFgColor_override"		"Yellow"
-			"depressedFgColor_override"	"TanLight"
+			"defaultFgColor_override"	"TwitchGrey14"
+			"defaultBgColor_override"	"Transparent"
+			"armedBgColor_override"		"TwitchGrey3"
 		}
 
 		"PartySlot0"

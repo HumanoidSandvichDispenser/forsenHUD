@@ -6,36 +6,51 @@ Scheme
 	Fonts
 	{
         // TWITCH MAIN MENU FONT
-		"Inter20"
+		"Inter20Medium"
 		{
 			"1"
 			{
-				"name"			"Inter"
+				"name"			"InterMedium"
 				"tall"			"20"
 				"additive"		"0"
 				"antialias" 	"1"
+				"range"			"0x0000 0xFFFF"
 			}
 		}
 
-		"Inter16"
+		"Inter16Medium"
 		{
 			"1"
 			{
-				"name"			"Inter"
+				"name"			"InterMedium"
 				"tall"			"16"
 				"additive"		"0"
 				"antialias" 	"1"
+				"range"			"0x0000 0xFFFF"
 			}
 		}
 
-		"Inter14"
+		"Inter14Medium"
 		{
 			"1"
 			{
-				"name"			"Inter"
+				"name"			"InterMedium"
 				"tall"			"14"
 				"additive"		"0"
 				"antialias" 	"1"
+				"range"			"0x0000 0xFFFF"
+			}
+		}
+
+		"Inter12Medium"
+		{
+			"1"
+			{
+				"name"			"InterMedium"
+				"tall"			"12"
+				"additive"		"0"
+				"antialias" 	"1"
+				"range"			"0x0000 0xFFFF"
 			}
 		}
 
@@ -47,6 +62,19 @@ Scheme
 				"tall"			"12"
 				"additive"		"0"
 				"antialias" 	"1"
+				"range"			"0x0000 0xFFFF"
+			}
+		}
+
+		"Inter10Medium"
+		{
+			"1"
+			{
+				"name"			"InterMedium"
+				"tall"			"10"
+				"additive"		"0"
+				"antialias" 	"1"
+				"range"			"0x0000 0xFFFF"
 			}
 		}
 
@@ -55,9 +83,11 @@ Scheme
 			"1"
 			{
 				"name"			"Inter"
+				"weight"		"200"
 				"tall"			"10"
 				"additive"		"0"
 				"antialias" 	"1"
+				"range"			"0x0000 0xFFFF"
 			}
 		}
 
@@ -65,11 +95,24 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Inter"
+				"name"			"InterLight"
 				"weight"		"200"
 				"tall"			"10"
 				"additive"		"0"
 				"antialias" 	"1"
+				"range"			"0x0000 0xFFFF"
+			}
+		}
+
+		"Inter9Medium"
+		{
+			"1"
+			{
+				"name"			"InterMedium"
+				"tall"			"9"
+				"additive"		"0"
+				"antialias" 	"1"
+				"range"			"0x0000 0xFFFF"
 			}
 		}
 
@@ -81,6 +124,7 @@ Scheme
 				"tall"			"9"
 				"additive"		"0"
 				"antialias" 	"1"
+				"range"			"0x0000 0xFFFF"
 			}
 		}
 
@@ -88,11 +132,23 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Inter"
-				"weight"		"200"
+				"name"			"InterLight"
 				"tall"			"9"
 				"additive"		"0"
 				"antialias" 	"1"
+				"range"			"0x0000 0xFFFF"
+			}
+		}
+
+		"Inter8Medium"
+		{
+			"1"
+			{
+				"name"			"InterMedium"
+				"tall"			"8"
+				"additive"		"0"
+				"antialias" 	"1"
+				"range"			"0x0000 0xFFFF"
 			}
 		}
 
@@ -104,6 +160,7 @@ Scheme
 				"tall"			"8"
 				"additive"		"0"
 				"antialias" 	"1"
+				"range"			"0x0000 0xFFFF"
 			}
 		}
 
@@ -111,14 +168,13 @@ Scheme
 		{
 			"1"
 			{
-				"name"			"Inter"
-				"weight"		"200"
+				"name"			"InterLight"
 				"tall"			"8"
 				"additive"		"0"
 				"antialias" 	"1"
+				"range"			"0x0000 0xFFFF"
 			}
 		}
-
 		// CUSTOM
 		"FontBold50"
 		{
@@ -2952,16 +3008,38 @@ Scheme
 		}
 		"10"
 		{
-			"font"	"resource/fonts/Inter.ttf"
-			"name"	"Inter"
+			"font"	"resource/fonts/InterNerdFontPropo-Medium.otf"
+			"name"	"InterMedium"
+			"english"
+			{
+				"range"	"0x00000 0xFFFFF"
+			}
 		}
-		"11"		"resource/linux_fonts/DejaVuSans.ttf"
-		"12"		"resource/linux_fonts/DejaVuSans-Bold.ttf"
-		"13"		"resource/linux_fonts/DejaVuSans-BoldOblique.ttf"
-		"14"		"resource/linux_fonts/DejaVuSans-Oblique.ttf"
-		"15"		"resource/linux_fonts/LiberationSans-Regular.ttf"
-		"16"		"resource/linux_fonts/LiberationSans-Bold.ttf"
-		"17"		"resource/linux_fonts/LiberationMono-Regular.ttf"
-		"18"		"resource/linux_fonts/FiraSans-Regular.ttf"
+		"11"
+		{
+			"font"	"resource/fonts/InterNerdFontPropo-Regular.otf"
+			"name"	"Inter"
+			"english"
+			{
+				"range"	"0x00000 0xFFFFF"
+			}
+		}
+		"12"
+		{
+			"font"	"resource/fonts/InterNerdFontPropo-Light.otf"
+			"name"	"InterLight"
+			"english"
+			{
+				"range"	"0x0000 0xFFFF"
+			}
+		}
+		"13"		"resource/linux_fonts/DejaVuSans.ttf"
+		"14"		"resource/linux_fonts/DejaVuSans-Bold.ttf"
+		"15"		"resource/linux_fonts/DejaVuSans-BoldOblique.ttf"
+		"16"		"resource/linux_fonts/DejaVuSans-Oblique.ttf"
+		"17"		"resource/linux_fonts/LiberationSans-Regular.ttf"
+		"18"		"resource/linux_fonts/LiberationSans-Bold.ttf"
+		"19"		"resource/linux_fonts/LiberationMono-Regular.ttf"
+		"20"		"resource/linux_fonts/FiraSans-Regular.ttf"
 	}
 }

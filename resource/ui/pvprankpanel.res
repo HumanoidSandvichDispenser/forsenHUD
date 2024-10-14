@@ -212,21 +212,30 @@
 			"tall"			"9"
 			"visible"		"1"
 			"enabled"		"1"
-			"font"			"Inter9"
+			"font"			"FontRegular12"
 			"font_minmode"	"SmallerIcons"
-			"fgcolor_override"		"TwitchGrey14"
+			"fgcolor_override"		"255 255 255 255"
 			"labelText"				"%name%"
 			"proportionaltoparent"	"1"
-			"textAlignment"	"east"
+		}
 
-			"pin_to_sibling"		"DescLine1"
+		"NameLabelShadow"
+		{
+			"ControlName"		"Label"
+			"fieldName"		"NameLabelShadow"
+			"xpos"			"-1"
+			"ypos"			"-1"
+			"wide"			"111"
+			"zpos"			"99"
+			"tall"			"9"
+			"font"			"FontRegular12"
+			"font_minmode"	"SmallerIcons"
+			"fgcolor_override"		"0 0 0 200"
+			"labelText"				"%name%"
+
+			"pin_to_sibling"	"NameLabel"
 			"pin_corner_to_sibling"	"PIN_TOPLEFT"
-			"pin_to_sibling_corner"	"PIN_TOPRIGHT"
-
-			if_mini
-			{
-				"visible"	"0"
-			}
+			"pin_to_sibling_corner"	"PIN_TOPLEFT"
 		}
 
 		"DescLine1"
@@ -240,8 +249,8 @@
 			"tall"			"9"
 			"visible"		"1"
 			"enabled"		"1"
-			"font"					"Inter9"
-			"fgcolor_override"		"TwitchRed11"
+			"font"					"FontRegular12"
+			"fgcolor_override"		"255 230 120 255"
 			//"textAlignment"			"east"
 			"textAlignment"			"left"
 			"labelText"				"%desc1%"
@@ -251,14 +260,25 @@
 			"pin_to_sibling"		"LevelIcon"
 			"pin_corner_to_sibling"	"PIN_TOPLEFT"
 			"pin_to_sibling_corner"	"PIN_TOPRIGHT"
-
-			if_mini
-			{
-				"xpos"			"50"
-				"ypos"			"r35"
-			}
 		}
 
+		"DescLine1Shadow"
+		{
+			"ControlName"		"CAutoFittingLabel"
+			"fieldName"		"DescLine1Shadow"
+			"xpos"			"-1"
+			"ypos"			"-1"
+			"wide"			"25"
+			"zpos"			"99"
+			"tall"			"9"
+			"font"					"FontRegular12"
+			"fgcolor_override"		"0 0 0 200"
+			"labelText"				"%desc1%"
+
+			"pin_to_sibling"		"DescLine1"
+			"pin_corner_to_sibling"	"PIN_TOPLEFT"
+			"pin_to_sibling_corner"	"PIN_TOPLEFT"
+		}
 		"LevelIcon"
 		{
 			"ControlName"		"CAutoFittingLabel"
@@ -270,12 +290,16 @@
 			"tall"			"9"
 			"visible"		"1"
 			"enabled"		"1"
-			"font"					"Icons9"
-			"fgcolor_override"		"TwitchRed11"
+			"font"					"Icons10"
+			"fgcolor_override"		"255 230 120 255"
 			"textAlignment"			"left"
 			"labelText"				"!"
 			"proportionaltoparent"	"1"
 			"centerwrap" "0"
+
+			"pin_to_sibling"		"NameLabel"
+			"pin_corner_to_sibling"	"PIN_TOPLEFT"
+			"pin_to_sibling_corner"	"PIN_TOPRIGHT"
 
 			if_mini
 			{
@@ -333,7 +357,7 @@
 
 			"pin_corner_to_sibling"	"PIN_TOPLEFT"
 			"pin_to_sibling_corner"	"PIN_TOPLEFT"
-			"pin_to_sibling"		"LevelIcon"
+			"pin_to_sibling"		"NameLabel"
 
 			if_mini
 			{
@@ -398,14 +422,14 @@
 						"ControlName"	"ContinuousProgressBar"
 						"fieldName"		"ContinuousProgressBar"
 						"xpos"			"0"
-						"ypos"			"4"
+						"ypos"			"10"
 						"wide"			"150"
-						"tall"			"f-4"
+						"tall"			"4"
 						"proportionaltoparent"	"1"
 						"progress"		"0"
 
-						"fgcolor_override"	"TwitchGrey2"
-						"bgcolor_override"	"Transparent"
+						"fgcolor_override"	"255 255 255 255"
+						"bgcolor_override"	"255 255 255 50"
 					}
 
 					"Frame"
@@ -418,9 +442,10 @@
 						"tall"			"2"
 						"zpos"			"5"
 						"proportionaltoparent"	"1"
+						"visible"		"0"
 
-						"fgcolor_override"	"TwitchGrey2"
-						"bgcolor_override"	"TwitchGrey2"
+						"fgcolor_override"	"255 255 255 255"
+						"bgcolor_override"	"255 255 255 255"
 					}
 				}
 			}

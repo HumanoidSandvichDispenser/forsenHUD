@@ -288,7 +288,7 @@
 		"ControlName"	"CPvPRankPanel"
 		"fieldName"		"RankPanel"
 		"xpos"			"0"
-		"ypos"			"4"
+		"ypos"			"64"
 		"zpos"			"0"
 		"wide"			"150"
 		"tall"			"40"
@@ -299,9 +299,10 @@
 		"xp_source_notification_center_x"	"350"
 		"show_model"	"0"
 
-		"pin_to_sibling"			"CharacterSetupButton"
-		"pin_corner_to_sibling" 	"PIN_TOPRIGHT"
-		"pin_to_sibling_corner" 	"PIN_BOTTOMRIGHT"
+		//"pin_to_sibling"			"CharacterSetupButton"
+		"pin_to_sibling"			"ChannelPanel"
+		"pin_corner_to_sibling" 	"PIN_BOTTOMLEFT"
+		"pin_to_sibling_corner" 	"PIN_TOPLEFT"
 	}
 
 	"NoGCMessage"
@@ -1460,7 +1461,7 @@
 	"ConsoleButton"
 	{
 		"ControlName"		"EditablePanel"
-		"FieldName"			"ConsoleButton"
+		"fieldName"			"ConsoleButton"
 		"enabled"			"0"
 	}
 
@@ -1740,14 +1741,14 @@
 		"xpos"				"-16"
 		"ypos"				"-7"
 		"zpos"				"11"
-		"wide"				"30"
+		"wide"				"36"
 		"tall"				"14"
 		"visible"			"1"
 		"enabled"			"1"
 		//"labeltext"		"#MMenu_CharacterSetup"
-		"labeltext"			"Items"
+		"labeltext"			"  Items"
 		"command"			"engine open_charinfo"
-		"font"				"Inter9"
+		"font"				"Inter8Medium"
 		"textAlignment"		"center"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
@@ -1869,15 +1870,31 @@
 			"xpos"				"56"
 			"ypos"				"8"
 			"zpos"				"5"
-			"wide"				"48"
+			"wide"				"32"
 			"tall"				"12"
 			"visible"			"1"
 			"labelText"			"forsen"
-			"font"				"Inter12"
+			"font"				"Inter12Medium"
 			"proportionaltoparent"	"1"
 			"mouseinputenabled"		"0"
 			"use_proportional_insets"	"1"
 			"fgcolor_override"	"TwitchGrey14"
+		}
+
+		"VerifiedPin"
+		{
+			"ControlName"		"Label"
+			"fieldName"			"VerifiedPin"
+			"zpos"				"5"
+			"wide"				"24"
+			"tall"				"12"
+			"labelText"			""
+			"font"				"Inter10Light"
+			"fgcolor_override"	"TwitchPurple10"
+
+			"pin_to_sibling"	"ChannelName"
+			"pin_corner_to_sibling"	"PIN_TOPLEFT"
+			"pin_to_sibling_corner"	"PIN_TOPRIGHT"
 		}
 
 		"StreamTitle"
@@ -1911,7 +1928,7 @@
 			"tall"				"9"
 			"visible"			"1"
 			"labelText"			"Team Fortress 2"
-			"font"				"Inter9"
+			"font"				"Inter9Light"
 			"proportionaltoparent"	"1"
 			"mouseinputenabled"		"0"
 			"use_proportional_insets"	"1"
@@ -1980,7 +1997,23 @@
 			"fgcolor_override"	"TwitchGrey14"
 			"font"				"Inter12"
 			"tall"				"12"
-			"wide"				"80"
+			"wide"				"60"
+		}
+
+		"AboutLabelVerifiedPin"
+		{
+			"ControlName"		"Label"
+			"fieldName"			"AboutLabelVerifiedPin"
+			"zpos"				"5"
+			"wide"				"24"
+			"tall"				"12"
+			"labelText"			""
+			"font"				"Inter10Light"
+			"fgcolor_override"	"TwitchPurple10"
+
+			"pin_to_sibling"	"AboutLabel"
+			"pin_corner_to_sibling"	"PIN_TOPLEFT"
+			"pin_to_sibling_corner"	"PIN_TOPRIGHT"
 		}
 
 		"AboutPanel"
@@ -2182,6 +2215,7 @@
 		"wide"					"142"
 		"proportionaltoparent"	"1"
 		"bgcolor_override"		"TwitchGrey3"
+		"zpos"					"2"
 
 		"PaintBackgroundType"	"2"
 		"paintborder"			"1"
@@ -2205,22 +2239,43 @@
 
 	}
 
-	"Tier3OnlyLabel"
+	"Tier3OnlyPanel"
 	{
-		"xpos"				"-8"
-		"ypos"				"4"
-		"ControlName"		"Label"
-		"fieldName"			"Tier3OnlyLabel"
-		"labeltext"			"Tier 3 Subscribers-Only Chat"
-		"font"				"Inter8"
-		"wide"				"100"
-		"tall"				"8"
-		"proportionaltoparent"	"1"
-		"fgcolor_override"	"TwitchGrey9"
+		"tall"					"18"
+		"ypos"					"-16"
+		"ControlName"			"EditablePanel"
+		"fieldName"				"Tier3OnlyPanel"
+		"zpos"					"1"
 
 		"pin_to_sibling"		"ChatBox"
 		"pin_corner_to_sibling"	"PIN_BOTTOMLEFT"
-		"pin_to_sibling_corner"	"PIN_TOPLEFT"
+		"pin_to_sibling_corner"	"PIN_BOTTOMLEFT"
+
+		"wide"					"142"
+		"tall"					"24"
+
+		"PaintBackgroundType"	"2"
+		"paintborder"			"1"
+
+		"bgcolor_override"		"Transparent"
+
+		"Tier3OnlyLabel"
+		{
+			"xpos"				"8"
+			"ypos"				"4"
+			"ControlName"		"Label"
+			"fieldName"			"Tier3OnlyLabel"
+			"labeltext"			"Tier 3 Subscribers-Only Chat"
+			"font"				"Inter8Medium"
+			"wide"				"100"
+			"tall"				"8"
+			"proportionaltoparent"	"1"
+			"fgcolor_override"	"TwitchGrey9"
+
+			//"pin_to_sibling"		"ChatBox"
+			//"pin_corner_to_sibling"	"PIN_BOTTOMLEFT"
+			//"pin_to_sibling_corner"	"PIN_TOPLEFT"
+		}
 	}
 
 	"ChatButton"
@@ -2234,7 +2289,7 @@
 		"proportionaltoparent"	"1"
 		"labeltext"				"Chat"
 		"textAlignment"			"center"
-		"font"				"Inter9"
+		"font"				"Inter8Medium"
 
 		"defaultFgColor_override"	"TwitchGrey14"
 		"armedFgColor_override"		"TwitchGrey1"
@@ -2258,9 +2313,45 @@
 		"wide"					"208"
 		"image"					"replay\thumbnails\chat"
 		"scaleImage"			"2"
+		"mouseinputenabled"		"0"
 
 		"pin_to_sibling"		"ChatBox"
 		"pin_corner_to_sibling"	"PIN_BOTTOMLEFT"
+		"pin_to_sibling_corner"	"PIN_TOPLEFT"
+	}
+
+	"ShowConsoleButton"
+	{
+		"ControlName"			"CExButton"
+		"fieldName"				"ShowConsoleButton"
+		"command"				"engine showconsole"
+		"ypos"					"4"
+		"wide"					"11"
+		"labelText"				"󰆍"
+		"font"					"Inter9"
+		"textAlignment"			"center"
+
+		"defaultFgColor_override"	"TwitchGrey14"
+		"defaultBgColor_override"	"Transparent"
+		"armedFgColor_override"	"TwitchGrey14"
+		"armedBgColor_override"		"TwitchGrey3"
+
+		"pin_to_sibling"		"CharacterSetupButton"
+		"pin_corner_to_sibling"	"PIN_TOPRIGHT"
+		"pin_to_sibling_corner"	"PIN_BOTTOMRIGHT"
+	}
+
+	"AudienceLabel"
+	{
+		"ControlName"			"Label"
+		"fieldName"				"AudienceLabel"
+		"tall"					"9"
+		"labelText"				" 0"
+		"font"					"Inter9"
+		"fgcolor_override"		"TwitchRed11"
+
+		"pin_to_sibling"		"ShowConsoleButton"
+		"pin_corner_to_sibling"	"PIN_TOPRIGHT"
 		"pin_to_sibling_corner"	"PIN_TOPLEFT"
 	}
 }
