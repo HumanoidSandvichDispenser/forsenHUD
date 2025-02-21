@@ -5,7 +5,7 @@
 		"fieldName"					"partychat"
 		"visible"					"1"
 		"enabled"					"1"
-		"xpos"						"5"
+		"xpos"						"0"
 		"ypos"						"10"
 		"zpos"						"1001"
 		"wide"						"200"
@@ -16,9 +16,9 @@
 		"border"					"PanelBorder"
 		"bgcolor_override"			"DarkGrey"
 
-		"log_font_small"			"HudFontSmall"
-		"log_font_medium"			"HudFontMediumSmallSecondary"
-		"log_font_large"			"HudFontMediumSecondary"
+		"log_font_small"			"HudFontSmallest"
+		"log_font_medium"			"HudFontSmallest"
+		"log_font_large"			"HudFontSmallest"
 
 		"chat_color_default"		"255 255 255 255"
 		"chat_color_player_name"	"255 255 0 255"

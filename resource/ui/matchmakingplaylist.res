@@ -16,7 +16,7 @@
 	{
 		"ControlName"			"Label"
 		"fieldName"				"CasualLabel"
-		"xpos"					"r-40"
+		"xpos"					"0"
 		"ypos"					"5"
 		"zpos"					"15"
 		"tall"					"15"
@@ -26,14 +26,18 @@
 		"font"					"FontBold12"
 		"fgcolor_override"		"TanLight"
 		"proportionaltoparent"	"1"
+
+		"pin_to_sibling"		"CasualEntry"
+		"pin_corner_to_sibling"	"PIN_BOTTOMLEFT"
+		"pin_to_sibling_corner"	"PIN_TOPLEFT"
 	}
 
 	"CasualEntry"
 	{
 		"ControlName"			"CPlayListEntry"
 		"fieldName"				"CasualEntry"
-		"xpos"					"0"
-		"ypos"					"5"
+		"xpos"					"r150"
+		"ypos"					"25"
 		"tall"					"40"
 		"wide"					"115"
 		"proportionaltoparent"	"0"
@@ -42,10 +46,6 @@
 		"button_command"		"play_casual"
 		"desc_token"			"#MMenu_PlayList_Casual_Desc"
 		"matchgroup"			"7" // k_eTFMatchGroup_Casual_12v12
-
-		"pin_to_sibling"		"CasualLabel"
-		"pin_corner_to_sibling"	"PIN_TOPLEFT"
-		"pin_to_sibling_corner"	"PIN_BOTTOMLEFT"
 	}
 	
 	//---------------
@@ -66,8 +66,8 @@
 		"proportionaltoparent"	"1"
 
 		"pin_to_sibling"		"CasualLabel"
-		"pin_corner_to_sibling"	"PIN_TOPLEFT"
-		"pin_to_sibling_corner"	"PIN_TOPRIGHT"
+		"pin_corner_to_sibling"	"PIN_TOPRIGHT"
+		"pin_to_sibling_corner"	"PIN_TOPLEFT"
 	}
 
 	"CompetitiveEntry"
@@ -108,8 +108,8 @@
 		"proportionaltoparent"	"1"
 
 		"pin_to_sibling"		"CompetitiveLabel"
-		"pin_corner_to_sibling"	"PIN_TOPLEFT"
-		"pin_to_sibling_corner"	"PIN_TOPRIGHT"
+		"pin_corner_to_sibling"	"PIN_TOPRIGHT"
+		"pin_to_sibling_corner"	"PIN_TOPLEFT"
 	}
 
 	"MvMEntry"
@@ -150,8 +150,8 @@
 		"proportionaltoparent"	"1"
 
 		"pin_to_sibling"		"MvMLabel"
-		"pin_corner_to_sibling"	"PIN_TOPLEFT"
-		"pin_to_sibling_corner"	"PIN_TOPRIGHT"
+		"pin_corner_to_sibling"	"PIN_TOPRIGHT"
+		"pin_to_sibling_corner"	"PIN_TOPLEFT"
 	}
 
 	"ServerBrowserEntry"
@@ -185,15 +185,15 @@
 		"zpos"					"15"
 		"wide"					"115"
 		"tall"					"15"
-		"labeltext"				"Quickplay Core"
+		"labeltext"				"comfig Quickplay"
 		"textAlignment"			"center"
 		"font"					"FontBold12"
 		"fgcolor_override"		"ComfigGreen"
 		"proportionaltoparent"	"1"
 
 		"pin_to_sibling"		"ServerBrowserLabel"
-		"pin_corner_to_sibling"	"PIN_TOPLEFT"
-		"pin_to_sibling_corner"	"PIN_TOPRIGHT"
+		"pin_corner_to_sibling"	"PIN_TOPRIGHT"
+		"pin_to_sibling_corner"	"PIN_TOPLEFT"
 	}
 
 	"QuickplayEntry"
@@ -214,23 +214,6 @@
 		"pin_to_sibling"		"QuickplayLabel"
 		"pin_corner_to_sibling"	"PIN_TOPLEFT"
 		"pin_to_sibling_corner"	"PIN_BOTTOMLEFT"
-
-		"ComfigLogo"
-		{
-			"ControlName"			"ImagePanel"
-			"fieldName"				"ComfigLogo"
-			"xpos"					"98"
-			"ypos"					"23"
-			"zpos"					"3"
-			"wide"					"17"
-			"tall"					"17"
-			"visible"				"1"
-			"enabled"				"1"
-			"image"					"replay/thumbnails/comfig"
-			"bgcolor_override"		"ComfigGreen"
-			"scaleimage"			"1"
-			"proportionaltoparent"	"1"
-		}
 
 		"QuickplayImage"
 		{
@@ -266,106 +249,9 @@
 			"bgcolor_override"		"BGBlack"
 			"proportionaltoparent"	"1"
 			"paintBackground"		"0"
-			"urlText"				"https://comfig.app/quickplay/?gm=core"
+			"urlText"				"https://comfig.app/quickplay/?gm=any"
 		}
 	}
-	
-	//---------------
-	
-	"QuickplayArenaLabel"
-	{
-		"ControlName"			"Label"
-		"fieldName"				"QuickplayArenaLabel"
-		"xpos"					"5"
-		"ypos"					"0"
-		"zpos"					"15"
-		"wide"					"115"
-		"tall"					"15"
-		"labeltext"				"Quickplay Arena"
-		"textAlignment"			"center"
-		"font"					"FontBold12"
-		"fgcolor_override"		"ComfigGreen"
-		"proportionaltoparent"	"1"
-
-		"pin_to_sibling"		"QuickplayLabel"
-		"pin_corner_to_sibling"	"PIN_TOPLEFT"
-		"pin_to_sibling_corner"	"PIN_TOPRIGHT"
-	}
-
-	"QuickplayArenaEntry"
-	{
-		"ControlName"			"EditablePanel"
-		"fieldName"				"QuickplayArenaEntry"
-		"xpos"					"0"
-		"ypos"					"5"
-		"zpos"					"5"
-		"tall"					"40"
-		"wide"					"115"
-		"visible"				"1"
-		"enabled"				"1"
-		"paintBackground"		"1"
-		"bgcolor_override"		"TanLight"
-		"border"				"GreenBorderThick"
-
-		"pin_to_sibling"		"QuickplayArenaLabel"
-		"pin_corner_to_sibling"	"PIN_TOPLEFT"
-		"pin_to_sibling_corner"	"PIN_BOTTOMLEFT"
-
-		"ComfigLogo"
-		{
-			"ControlName"			"ImagePanel"
-			"fieldName"				"ComfigLogo"
-			"xpos"					"98"
-			"ypos"					"23"
-			"zpos"					"3"
-			"wide"					"17"
-			"tall"					"17"
-			"visible"				"1"
-			"enabled"				"1"
-			"image"					"replay/thumbnails/comfig"
-			"bgcolor_override"		"ComfigGreen"
-			"scaleimage"			"1"
-			"proportionaltoparent"	"1"
-		}
-
-		"QuickplayImage"
-		{
-			"ControlName"			"ImagePanel"
-			"fieldName"				"QuickplayImage"
-			"xpos"					"cs-0.5"
-			"ypos"					"cs-0.15"
-			"wide"					"114"
-			"tall"					"117"
-			"visible"				"1"
-			"enabled"				"1"
-			"image"					"illustrations/training_offlinepractice"
-			"scaleimage"			"1"
-			"paintBackground"		"1"
-			"proportionaltoparent"	"1"
-			"fillcolor"				"TanLight"
-		}
-
-		"QuickplayLink"
-		{
-			"ControlName"			"URLLabel"
-			"fieldName"				"QuickplayLink"
-			"xpos"					"0"
-			"ypos"					"0"
-			"zpos"					"5"
-			"wide"					"f0"
-			"tall"					"f0"
-			"enabled"				"1"
-			"visible"				"1"
-			"font"					"FontBold12"
-			"labelText"				""
-			"textAlignment"			"center"
-			"proportionaltoparent"	"1"
-			"paintBackground"		"0"
-			"bgcolor_override"		"BGBlack"
-			"urlText"				"https://comfig.app/quickplay/?gm=arena"
-		}
-	}
-	
 
 	"TrainingEntry"
 	{
@@ -386,35 +272,5 @@
 		"ControlName"			"ScrollBar"
 		"FieldName"				"ScrollBar"
 		"xpos"					"9999"
-	}
-	
-	"DrawingBoard"
-	{
-		"ControlName"	"EditablePanel"
-		"xpos"			"0"
-		"ypos"			"20"
-		"zpos"			"1000"
-		"wide"			"230"
-		"tall"			"130"
-		"visible"		"1"
-		"paintBorder"	"1"
-		"border"		"NoBorder"
-		"proportionaltoparent"	"1"
-
-		"pin_to_sibling"		"QuickplayEntry"
-		"pin_corner_to_sibling"	"PIN_TOPLEFT"
-		"pin_to_sibling_corner"	"PIN_BOTTOMLEFT"
-		
-		"Draw"
-		{
-			"ControlName"		"CDrawingPanel"
-			"xpos"				"0"
-			"ypos"				"0"
-			"wide"				"f0"
-			"tall"				"f0"
-			"linecolor"			"TanLight"
-			"bgcolor_override"	"Transparent"
-			"proportionaltoparent"	"1"
-		}
 	}
 }

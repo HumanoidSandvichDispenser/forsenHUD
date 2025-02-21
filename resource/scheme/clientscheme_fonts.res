@@ -334,10 +334,9 @@ Scheme
 			"5"
 			{
 				"name"			"TF2 Secondary"
-				"tall"			"22"
+				"tall"			"9"
 				"weight"		"0"
 				"range"			"0x0000 0x017F"
-				"yres"			"1200 6000"
 				"antialias"		"1"
 			}
 			"6"
@@ -387,10 +386,9 @@ Scheme
 			"5"
 			{
 				"name"			"TF2 Secondary"
-				"tall"			"16"
+				"tall"			"9"
 				"weight"		"0"
 				"range"			"0x0000 0x017F"
-				"yres"			"1200 6000"
 				"antialias"		"1"
 			}
 		}
@@ -433,10 +431,9 @@ Scheme
 			"5"
 			{
 				"name"			"TF2 Secondary"
-				"tall"			"30"
+				"tall"			"18"
 				"weight"		"900"
 				"range"			"0x0000 0x017F"
-				"yres"			"1200 6000"
 				"antialias"		"1"
 			}
 			"6"
@@ -512,18 +509,19 @@ Scheme
 			"5"
 			{
 				"name"			"Verdana"
-				"tall"			"24"
+				"tall"			"12"
 				"weight"		"700"
-				"yres"			"1200 10000"
+				"antialias"		"1"
 			}
 		}
-
+		
 		"HudFontGiant"
 		{
 			"1"
 			{
 				"name"			"TF2 Secondary"
 				"tall"			"24"
+				"tall_lodef"	"80"
 				"weight"		"500"
 				"additive"		"0"
 				"antialias"		"1"
@@ -533,6 +531,7 @@ Scheme
 			{
 				"name"			"TF2 Secondary"
 				"tall"			"32"
+				"tall_hidef"	"120"
 				"weight"		"500"
 				"additive"		"0"
 				"antialias"		"1"
@@ -553,52 +552,58 @@ Scheme
 				"tall"			"48"
 				"weight"		"500"
 				"additive"		"0"
-				"antialias" 	"1"
+				"antialias"		"1"
 				"yres"			"1024 1199"
 			}
 			"5"
 			{
 				"name"			"TF2 Secondary"
-				"tall"			"52"
-				"weight"		"500"
-				"additive"		"0"
-				"antialias" 	"1"
-				"yres"			"1200 10000"
-			}
-		}
-		"HudFontGiantBold"
-		{
-			"1"
-			{
-				"name"			"TF2 Secondary"
-				"tall"			"44"
-				"weight"		"500"
-				"additive"		"0"
-				"antialias" 	"1"
-			}
-		}
-		"HudFontBiggerBold"
-		{
-			"1"
-			{
-				"name"			"TF2 Secondary"
-				"tall"			"35"
+				"tall"			"24"
 				"weight"		"500"
 				"additive"		"0"
 				"antialias"		"1"
 			}
 		}
+		
+		"HudFontGiantBold"
+		{
+			"1"
+			{
+				"name"			"TF2 Build"
+				"tall"			"44"
+				"tall_lodef"	"52"
+				"weight"		"500"
+				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
+		"HudFontBiggerBold"
+		{
+			"1"
+			{
+				"name"			"TF2 Build"
+				"tall"			"35"
+				"tall_lodef"	"40"
+				"weight"		"500"
+				"additive"		"0"
+				"antialias"		"1"
+			}
+		}
+		
 		"HudFontBig"
 		{
 			"1"
 			{
 				"name"			"TF2 Secondary"
 				"tall"			"36"
+				"tall_hidef"	"48"
 				"weight"		"500"
 				"additive"		"0"
-				"antialias" 	"1"
+				"antialias"		"1"
 			}
 		}
+		
 		"HudFontMediumBig"
 		{
 			"1"
@@ -610,28 +615,32 @@ Scheme
 				"antialias"		"1"
 			}
 		}
+		
 		"HudFontMediumBigBold"
 		{
 			"1"
 			{
-				"name"			"TF2 Secondary"
+				"name"			"TF2 Build"
 				"tall"			"30"
 				"weight"		"500"
 				"additive"		"0"
 				"antialias"		"1"
 			}
 		}
+		
 		"HudFontMedium"
 		{
 			"1"
 			{
 				"name"			"TF2 Secondary"
 				"tall"			"24"
+				"tall_lodef"	"28"
 				"weight"		"500"
 				"additive"		"0"
 				"antialias"		"1"
 			}
 		}
+		
 		"HudFontMediumSecondary"
 		{
 			"1"
@@ -639,10 +648,20 @@ Scheme
 				"name"			"TF2 Secondary"
 				"tall"			"24"
 				"weight"		"500"
+				"yres"			"1 1199"
 				"additive"		"0"
-				"antialias" 	"1"
+				"antialias"		"1"
+			}
+			"2"
+			{
+				"name"			"TF2 Secondary"
+				"tall"			"10"
+				"weight"		"500"
+				"additive"		"0"
+				"antialias"		"1"
 			}
 		}
+		
 		"HudFontMediumBold"
 		{
 			"1"
@@ -651,9 +670,10 @@ Scheme
 				"tall"			"24"
 				"weight"		"500"
 				"additive"		"0"
-				"antialias" 	"1"
+				"antialias"		"1"
 			}
 		}
+		
 		"HudFontMediumSmallBold"
 		{
 			"1"
@@ -662,76 +682,88 @@ Scheme
 				"tall"			"18"
 				"weight"		"500"
 				"additive"		"0"
-				"antialias" 	"1"
+				"antialias"		"1"
 			}
 		}
+		
 		"HudFontMediumSmall"
 		{
 			"1"
 			{
 				"name"			"TF2 Secondary"
 				"tall"			"18"
+				"tall_hidef"	"24"
+				"tall_lodef"	"18"
 				"weight"		"500"
 				"additive"		"0"
-				"antialias" 	"1"
+				"antialias"		"1"
 			}
 		}
+		
 		"HudFontMediumSmallSecondary"
 		{
 			"1"
 			{
 				"name"			"TF2 Secondary"
 				"tall"			"18"
+				"tall_hidef"	"24"
+				"tall_lodef"	"20"
 				"weight"		"500"
 				"additive"		"0"
-				"antialias" 	"1"
+				"antialias"		"1"
 			}
 		}
+		
 		"HudFontSmall"
 		{
 			"1"
 			{
 				"name"			"TF2 Secondary"
 				"tall"			"14"
+				"tall_lodef"	"16"
 				"weight"		"500"
 				"additive"		"0"
-				"antialias" 	"1"
+				"antialias"		"1"
 			}
 		}
+		
 		"HudFontSmallishBold"
 		{
 			"1"
 			{
-				"name"			"TF2 Secondary"
+				"name"			"TF2 Build"
 				"tall"			"16"
 				"weight"		"500"
 				"additive"		"0"
-				"antialias" 	"1"
+				"antialias"		"1"
 			}
 		}
+		
 		"HudFontSmallBold"
 		{
 			"1"
 			{
-				"name"			"TF2 Secondary"
+				"name"			"TF2 Build"
 				"tall"			"14"
 				"weight"		"500"
 				"additive"		"0"
-				"antialias" 	"1"
+				"antialias"		"1"
 			}
 		}
+		
 		"HudFontSmallBoldShadow"
 		{
 			"1"
 			{
-				"name"			"TF2 Secondary"
+				"name"			"TF2 Build"
 				"tall"			"14"
 				"weight"		"500"
 				"additive"		"0"
-				"antialias" 	"1"
+				"antialias"		"1"
 				"dropshadow"	"1"
 			}
 		}
+		
 		"HudFontSmallest"
 		{
 			"1"
@@ -740,9 +772,10 @@ Scheme
 				"tall"			"11"
 				"weight"		"500"
 				"additive"		"0"
-				"antialias" 	"1"
+				"antialias"		"1"
 			}
 		}
+		
 		"HudFontSmallestShadow"
 		{
 			"1"
@@ -751,19 +784,20 @@ Scheme
 				"tall"			"11"
 				"weight"		"500"
 				"additive"		"0"
-				"antialias" 	"1"
+				"antialias"		"1"
 				"dropshadow"	"1"
 			}
 		}
+		
 		"HudFontSmallestBold"
 		{
 			"1"
 			{
-				"name"			"TF2 Secondary"
+				"name"			"TF2 Build"
 				"tall"			"11"
 				"weight"		"500"
 				"additive"		"0"
-				"antialias" 	"1"
+				"antialias"		"1"
 			}
 		}
 
@@ -2330,7 +2364,7 @@ Scheme
 			"1"
 			{
 				"name"			"TF2 Secondary"
-				"tall"			"10"
+				"tall"			"12"
 				"weight"		"400"
 				"additive"		"0"
 				"antialias" 	"1"
@@ -2707,7 +2741,6 @@ Scheme
 	// For TF2: Any special character will need to be added to our font file
 	CustomFontFiles
 	{
-
 		"1" "resource/tf.ttf"
 		"2" "resource/tfd.ttf"
 		"3"
