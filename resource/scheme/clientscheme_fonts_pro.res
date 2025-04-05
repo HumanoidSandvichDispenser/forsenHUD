@@ -3042,7 +3042,7 @@ Scheme
 		}
 		"10"
 		{
-			"font"	"resource/fonts/InterNerdFontPropo-Medium.otf"
+			"font"	"resource/fonts/inter-nerd-font-propo-medium.otf"
 			"name"	"InterMedium"
 			"english"
 			{
@@ -3051,7 +3051,7 @@ Scheme
 		}
 		"11"
 		{
-			"font"	"resource/fonts/InterNerdFontPropo-Regular.otf"
+			"font"	"resource/fonts/inter-nerd-font-propo-regular.otf"
 			"name"	"Inter"
 			"english"
 			{
@@ -3060,7 +3060,7 @@ Scheme
 		}
 		"12"
 		{
-			"font"	"resource/fonts/InterNerdFontPropo-Light.otf"
+			"font"	"resource/fonts/inter-nerd-font-propo-light.otf"
 			"name"	"InterLight"
 			"english"
 			{
