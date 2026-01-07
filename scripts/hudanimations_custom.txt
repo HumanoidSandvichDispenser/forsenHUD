@@ -412,3 +412,37 @@ event MenuClose
 	Animate HudMenu ItemColor	"0 0 0 0" Linear 0.0 1
 	RunEvent FillUber 0.0
 }
+
+event HideSpectatorGui
+{
+    Animate specgui Alpha "0" Linear 0.0 0.0
+    Animate HudMatchStatus Alpha "0" Linear 0.0 0.0
+    Animate HudObjectiveStatus Alpha "0" Linear 0.0 0.0
+    Animate HudDeathNotice Alpha "0" Linear 0.0 0.0
+    Animate HudSpectatorExtras Alpha "0" Linear 0.0 0.0
+    Animate HudKothTimeStatus Alpha "0" Linear 0.0 0.0
+    Animate EscortHilightSwoop Alpha "0" Linear 0.0 0.0
+    Animate CSpectatorTargetID Alpha "0" Linear 0.0 0.0
+    Animate CSecondaryTargetID Alpha "0" Linear 0.0 0.0
+    Animate HudPlayerStatus Alpha "0" Linear 0.0 0.0
+    Animate HudWeaponAmmo Alpha "0" Linear 0.0 0.0
+    Animate HudPlayerClass Alpha "0" Linear 0.0 0.0
+    FireCommand 0.0 "engine alias togglespecgui showspecgui"
+}
+
+event ShowSpectatorGui
+{
+    Animate specgui Alpha "255" Linear 0.0 0.0
+    Animate HudMatchStatus Alpha "255" Linear 0.0 0.0
+    Animate HudObjectiveStatus Alpha "255" Linear 0.0 0.0
+    Animate HudDeathNotice Alpha "255" Linear 0.0 0.0
+    Animate HudSpectatorExtras Alpha "255" Linear 0.0 0.0
+    Animate HudKothTimeStatus Alpha "255" Linear 0.0 0.0
+    Animate EscortHilightSwoop Alpha "255" Linear 0.0 0.0
+    Animate CSpectatorTargetID Alpha "255" Linear 0.0 0.0
+    Animate CSecondaryTargetID Alpha "255" Linear 0.0 0.0
+    Animate HudPlayerStatus Alpha "255" Linear 0.0 0.0
+    Animate HudWeaponAmmo Alpha "255" Linear 0.0 0.0
+    Animate HudPlayerClass Alpha "255" Linear 0.0 0.0
+    FireCommand 0.0 "engine alias togglespecgui hidespecgui"
+}
